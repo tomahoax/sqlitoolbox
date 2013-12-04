@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>sqlitoolbox</name>
+        <version>1.0.0</version>
+        <copyright>Copyright (C) 2013 Yannick Olympio</copyright>
+        <license>GNU General Public License v2.0</license>
+    </metadata>
+    <dependencies>
+        <extends>
+        </extends>
+        <requires>
+            <extension name="ezxmlinstaller" />
+        </requires>
+    </dependencies>
+</software>

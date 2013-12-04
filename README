@@ -1,0 +1,44 @@
+=================================
+ SQLi Toolbox Documentation
+=================================
+
+-----------------------------------------------
+ 2013 Yannick Olympio
+-----------------------------------------------
+
+Warning
+============
+
+This extension doesn't correctly works standalone, before using it make sure that *ezxmlinstaller* is correctly installed and activated on the target instance
+
+Introduction
+============
+
+This extension brings some useful features :
+    - Display standard and custom log files directly from the back office (particularly useful when direct access to filesystem is not available)
+    - Display generated .mail files (these files are generated when Transport is set to file in [MailSettings]
+    - A quite basic interface to select and export content class definitions :
+        - Export is generated in the XML format used by ezxmlinstaller extension,
+        - An additional XMLInstallerHandler has been added to handle the ability to update a class (by adding/removing attributes)
+        - Once generated the output XML file can be processed with this command :
+         *Shell*
+         ::
+            php extension/ezxmlinstaller/bin/php/xmlinstaller.php --file=output.xml
+
+Installation
+============
+
+  - Download the compressed file under *extension/* directory and uncompress it.
+  - Activate the extension.
+  - Clear the caches
+  - Re-build the class autoload array :
+
+*Shell*
+::
+  php bin/php/ezpgenerateautoloads.php -e -p
+
+
+How to Use in the Backoffice
+============================
+
+  - Once correctly installed you should have a new *Toolbox* tab on the backoffice.
